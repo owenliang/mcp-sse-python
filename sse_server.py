@@ -5,8 +5,6 @@ from starlette.routing import Mount, Route
 import uvicorn
 import httpx
 
-from mcp.server import session
-
 mcpserver=FastMCP(name='website fetcher') # handle session
 sse_transport=SseServerTransport('/messages/') # handle io(sse,post)
 
